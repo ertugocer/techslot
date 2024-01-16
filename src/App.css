@@ -13,6 +13,52 @@
   }
 }
 
+
+
+.kim{
+  height: 370px;
+  position: relative; 
+}
+
+.yazı2 {
+  margin: 0;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  font-size: 22px;
+  color: rgba(255, 238, 238, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.yazı3{
+  margin: 0;
+  position: absolute;
+  left: 1%;
+  top: 40%;
+  font-size: 22px;
+  color: rgba(255, 238, 238, 1);
+}
+
+.cozum {
+  border: rgba(255, 255, 238, 0.9333) solid 1px ;
+  background-color: #395348;
+  border-radius: 50px;
+  height: 370px;
+  position: relative;
+}
+.yazı1{
+  margin: 0;
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  font-size: 63px;
+  color: rgba(255, 238, 238, 1);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ana {
+  background-color: #7C9287;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
