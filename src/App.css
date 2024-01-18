@@ -29,16 +29,6 @@
   color: rgba(255, 238, 238, 1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.yazı3{
-  margin: 0;
-  position: absolute;
-  left: 1%;
-  top: 40%;
-  font-size: 22px;
-  color: rgba(255, 238, 238, 1);
-}
-
 .cozum {
   border: rgba(255, 255, 238, 0.9333) solid 1px ;
   background-color: #395348;
@@ -56,8 +46,8 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ana {
-  background-color: #7C9287;
-}
+  background: linear-gradient(355deg, #956DA7, #897F97, #82898E,#7D9089, #7C9287);}
+
 
 .App-header {
   background-color: #282c34;
