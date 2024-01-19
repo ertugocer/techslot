@@ -22,10 +22,10 @@ const home = () => {
             <Slagon /></Grid>
             <HomeCard/>
             <div dir="rtl">
-            <HomeCard/>></div>
+            <HomeCard/></div>
             <HomeCard/>
             <div dir="rtl">
-            <HomeCard/>></div>
+            <HomeCard/></div>
         </Grid>
     )
 
