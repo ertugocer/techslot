@@ -46,9 +46,23 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ana {
-  background: linear-gradient(355deg, #956DA7, #897F97, #82898E,#7D9089, #7C9287);}
+  background: linear-gradient(355deg, #b17fc5, #bd93cd, #82898E, #7C9287);}
 
+  .centered-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .centered-image {
+    width: 150px; /* veya istediğiniz genişlik */
+    height: 150px; /* veya istediğiniz yükseklik */
+    object-fit: cover; /* Resmin boyutunu korurken ortalama */
+    padding-right: 90px;
+  }  
 
+.u {
+  margin: 0;
+  text-align: right;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

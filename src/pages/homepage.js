@@ -6,6 +6,7 @@ import {
 import '../images/home.jpg'
 import '../App.css';
 import Slagon from '../components/slagon'
+import HomeCard from '../components/homepagecard'
 
 const home = () => {
     return (
@@ -17,30 +18,14 @@ const home = () => {
             alt="home"
             />
         </Grid>
-            <Slagon />
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            <Grid sx={{height: 300}}>asasaa</Grid>
-            
+        <Grid>
+            <Slagon /></Grid>
+            <HomeCard/>
+            <div dir="rtl">
+            <HomeCard/>></div>
+            <HomeCard/>
+            <div dir="rtl">
+            <HomeCard/>></div>
         </Grid>
     )
 
