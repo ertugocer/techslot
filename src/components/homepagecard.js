@@ -4,7 +4,7 @@ import '../App.css';
 
 const homepagecard = () => {
   return (
-        <Card sx={{ maxWidth: 450, background: 'none', boxShadow: 'none'}}>
+        <Card sx={{ maxWidth: 450, background: 'none', boxShadow: 'none', padding: '50px', marginTop: '50px'}}>
             <div  className="centered-image-container">
       <CardMedia 
         component="img"

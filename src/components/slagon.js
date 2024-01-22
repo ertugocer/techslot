@@ -2,6 +2,7 @@ import React from "react";
 import {
     CardMedia,
     Grid,
+    Typography,
 } from '@mui/material'
 import Box from '@mui/material/Box';
 import '../images/home.jpg'
@@ -19,23 +20,23 @@ const slagon = () => {
         <Grid xs={12}>
             <Grid container>
                 <Grid item xs className="kim">
-                    <Box className="yazı2">
+                    <Typography className="yazı2">
                     Yılların verdiği tecrübe ve kalite ile emin ellerdesiniz. Uzman ekibimiz ile geliştirdiğmiz projelerde her zaman en yeni sistemleri
                     kullanarak bu sektörde göz önünde olmayı başardık. TechSlot şirketi kurulduğundan bu yana müşterilerine çözüm odaklı olarak
                     yeni nesil yazılım ve danışmanlık hizmeti vermekte.
-                    </Box>
+                    </Typography>
 </Grid>
                 <Grid item xs className="cozum">
-                    <Box className="yazı1">
+                    <Typography className="yazı1">
                     Çözümler için oluşturulmuş kodlamalar
-                    </Box>
+                    </Typography>
                 </Grid>
                 <Grid item xs className="kim">
-                <Box className="yazı2">
+                <Typography className="yazı2">
                 Yılların verdiği tecrübe ve kalite ile emin ellerdesiniz. Uzman ekibimiz ile geliştirdiğmiz projelerde her zaman en yeni sistemleri
                     kullanarak bu sektörde göz önünde olmayı başardık. TechSlot şirketi kurulduğundan bu yana müşterilerine çözüm odaklı olarak
                     yeni nesil yazılım ve danışmanlık hizmeti vermekte.
-                    </Box>
+                    </Typography>
                     </Grid>
             </Grid>
         </Grid>
