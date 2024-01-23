@@ -32,7 +32,7 @@ const home = () => {
             <HomeCard/></div>
             <Grid container direction={'column'}alignItems={"center"} justifyContent={"center"} sx={{paddingTop:"250px"}}>
             <Grid item  textAlign={"center"} height={"500px"} >
-            <Typography fontSize={"49px"} fontFamily={"Italiana"} fontStyle={"revert-layer"}>
+            <Typography fontSize={"49px"} fontFamily={'cursive'} fontStyle={"revert-layer"}>
                 Neden bizi tercih etmelisiniz
             </Typography>
             </Grid></Grid>

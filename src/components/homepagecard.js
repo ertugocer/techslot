@@ -4,20 +4,27 @@ import '../App.css';
 
 const homepagecard = () => {
   return (
-        <Card sx={{ maxWidth: 450, background: 'none', boxShadow: 'none', padding: '50px', marginTop: '50px'}}>
-            <div  className="centered-image-container">
+    <Grid container>
+      <Grid item lg='0.5'></Grid>
+        <Card sx={{ maxWidth: 530, background: 'none', boxShadow: 'none', marginTop: '50px'}}>
+              <Grid 
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              >
       <CardMedia 
         component="img"
         image={require('../images/pc.png')}
         alt="Sample Image"
         sx={{ width: 151 }}
         className="centered-image"
-      /></div>
+      /></Grid>
       <CardContent>
-        <Typography variant="h4"color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans'component="div">
+        <Typography fontSize={'30px'} color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' textAlign={'center'}>
         İsteğe özel proje geliştirme
         </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" fontSize={'22px'}>
+        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
        <h4> Analiz ve Gereksinimlerin Belirlenmesi: </h4>
         Müşteriyle etkileşimde bulunularak, iş ihtiyaçları, özel gereksinimler ve hedefler belirlenir. Bu aşamada, projenin hedef kitlesi, kullanım senaryoları ve beklentiler üzerinde odaklanılır.
 
@@ -38,6 +45,7 @@ Sürekli Destek ve Güncelleme: Yazılımın kullanımı sırasında ortaya çı
 Kişiye özel yazılım geliştirme, genellikle belirli bir işletmenin ihtiyaçlarına özel olarak uyarlanmış çözümleri içerir ve genellikle ticari yazılımların genel gereksinimlerini karşılamaktan daha spesifik ve özelleştirilmiş bir yaklaşım sunar.
         </Typography>
       </CardContent></Card>
+      </Grid>
   );
 };
 
