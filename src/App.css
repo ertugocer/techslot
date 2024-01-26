@@ -27,6 +27,12 @@
   }
 }
 
+.mission-text{
+  font-weight: 600 !important;
+  color: #05334d;
+
+}
+
 .slogan-center-box {
   border: rgba(255, 255, 238, 0.9333) solid 1px ;
   background-color: #395348;
@@ -46,7 +52,46 @@
     width: 150px; /* veya istediğiniz genişlik */
     height: 150px; /* veya istediğiniz yükseklik */
   }  
+.-webkit-backdrop-filter{
+  backdrop-filter: blur(10px) !important;
+}  
 
+.mission-under-text1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  border: 3px solid #4E6C7D;
+  margin: 40px !important;
+  margin-top: 20px !important;
+  padding: 20px;
+  color: black;
+  font-weight: 600;
+  backdrop-filter: blur(3px) !important;
+  text-align: center;
+}
+
+.mission-under-text2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-align: center;
+  height: 170px;
+  width: 156px;
+  line-height: 25px;
+  border-radius: 20px;
+  border: 3px solid #4E6C7D;
+  margin: 40px !important;
+  padding: 20px;
+  color: black;
+  font-weight: 600;
+  backdrop-filter: blur(3px) !important;
+  text-align: center;
+}
+
+.mission-under-text2{
+  border-radius: 20px;
+  border: 3px solid #4E6C7D;
+  margin: 40px !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -35,7 +35,7 @@ const home = () => {
             <HomeCard/>
             <div dir="rtl">
             <HomeCard/></div>
-            <Grid container direction={'column'}alignItems={"center"} justifyContent={"center"} sx={{paddingTop:"250px"}}>
+            <Grid container direction={'column'}alignItems={"center"} justifyContent={"center"} sx={{paddingTop:"330px"}}>
             <Grid item  textAlign={"center"} height={"500px"} >
             <Typography fontSize={"49px"} fontFamily={'cursive'} fontStyle={"revert-layer"}>
                 Neden bizi tercih etmelisiniz

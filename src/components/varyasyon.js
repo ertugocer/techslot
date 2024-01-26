@@ -8,6 +8,7 @@ class varyasyon extends Component {
           direction="row"
           justifyContent="space-evenly"
           alignItems="center"
+          paddingBottom={'40px'}
         >
             <Grid item xs="10" lg="5" color={'white'}>
                   <Grid container direction={'row'} justifyContent='flex-start'>
