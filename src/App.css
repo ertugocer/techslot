@@ -16,9 +16,15 @@
 
 .slogan-center-text {
   font-size: 50px !important;
-  margin-top: 70px !important;
+  margin-top: 60px !important;
   color: rgb(226, 221, 169);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 420px){
+  .slogan-center-text {
+    margin-top: 20px !important;
+  }
 }
 
 .slogan-center-box {
@@ -26,9 +32,10 @@
   background-color: #395348;
   border-radius: 50px;
   height: 370px;
+  padding: 16px;
 }
 .slagon-text{
-  font-size: 23px !important;
+  font-size: 18px !important;
   color: rgb(226, 221, 169);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
   padding: 10px;

@@ -22,9 +22,7 @@ class varyasyon extends Component {
                     <Card sx={{ background: 'none', boxShadow: 'none', maxWidth: '500px'}} >
                         <CardContent>
                             <Typography fontFamily={'sans-serif'} color={'white'} fontSize={'20px'}>
-                                Eskimiş ve geç yüklenen projelerden sıkılmadınız mı? İşte bu yüzden buradasınız. 
-                                Son teknolojileri kullandığımız için her zaman en güncel projeleriniz ve web 
-                                siteleriniz ile bir adım önde olmak istemezmisiniz?
+                                Eskimiş ve geç yüklenen projelerden sıkılmadınız mı? İşte buradayız. Son teknolojilerle tasarladığımız projelerimiz ve web sitelerimizle her zaman güncel ve hızlı bir deneyim yaşayın. Bizimle bir adım öne geçmek istemez misiniz?
                             </Typography>
                         </CardContent>
                     </Card>
@@ -36,13 +34,11 @@ class varyasyon extends Component {
                 }}>
                 <Card sx={{ background: 'none', boxShadow: 'none', maxWidth: '500px'}}>
                     <Typography sx={{paddingRight:"20px", fontSize:"28px"}} fontFamily={'cursive'} textAlign={"center"}>
-                        Hala isteğinize göre para veremiyor musunuz?
+                    Hala istediğinizi alamıyor musunuz ?
                     </Typography>
                         <CardContent>
                             <Typography fontFamily={'sans-serif'} fontSize={'20px'}>                    
-                                İstediğiniz zaman güncellenebilen projeler ile sorunlarınıza çözüm getirdik..
-                                İsteklerinize göre oluşturulabilen, 
-                                istediğiniz zaman dilediğiniz kısımları çıkarabilen, ekleyebilen proje tasarımları ile sizlerleyiz.
+                            Her an güncellenebilen projelerle sorunlarınıza hızlı ve etkili çözümler sunuyoruz. İstekleriniz doğrultusunda şekillendirilebilen projelerimiz, istediğiniz zaman istediğiniz özellikleri ekleyebilmeniz veya çıkarabilmeniz için esneklik sunuyor. Sizin ihtiyaçlarınıza özel tasarımlar ile yanınızdayız.
                             </Typography>
                         </CardContent>
                 </Card>
@@ -55,9 +51,7 @@ class varyasyon extends Component {
             <Card sx={{ background: 'none', boxShadow: 'none', maxWidth: '500px'}}>
                     <CardContent>
                         <Typography fontFamily={'sans-serif'} fontSize={'20px'}>
-                            Planlı ve daha düzenli işlerinizi yürütmek artık bir lüks değil. 
-                            Son geliştirdiğimiz projelerde basit ve güvenilir paneller üzerinden 
-                            işlerinizi kolayca takip edebilirsiniz.
+                        İşlerinizi planlı ve düzenli yönetmek artık bir lüks değil, bir ihtiyaç. yeni geliştirdiğimiz projelerde, basit ve güvenilir panellerle işlerinizi kolayca takip edin. hızlı, etkili ve güçlü çözümlerle iş süreçlerinizi yükseltin.
                         </Typography>
                     </CardContent>
                 </Card>

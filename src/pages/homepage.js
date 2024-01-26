@@ -2,14 +2,14 @@ import React from "react";
 import {
     CardMedia,
     Grid,
-    Typography,
-    Box
+    Typography
 } from '@mui/material'
 import '../images/home.jpg'
 import '../App.css';
 import Slagon from '../components/slagon'
 import HomeCard from '../components/homepagecard'
 import Varyasyon from '../components/varyasyon'
+import Mison from '../components/mison'
 
 const home = () => {
     return (
@@ -19,6 +19,11 @@ const home = () => {
             component="img"
             image={require('../images/home.jpg')}
             alt="home"
+            sx={{
+                '@media (max-width: 1000px)': {
+                  display: 'none',
+                },
+              }}
             />
         </Grid>
         <Grid>
@@ -37,6 +42,7 @@ const home = () => {
             </Typography>
             </Grid></Grid>
             <Varyasyon />
+            <Mison />
         </Grid>
         
     )
