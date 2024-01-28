@@ -45,8 +45,7 @@ class varyasyon extends Component {
                 </Card>
             </Grid>
             <Grid item xs="10" lg="5">
-                <Typography sx={{display: 'flex',
-                    flexDirection: 'center',paddingLeft: '40px', fontSize:"28px"}} fontFamily={'cursive'} textAlign={"center"}>
+                <Typography className='varyasyon-text-3'>
                     Sistematik çalışmaya nedersiniz?
                 </Typography>
             <Card sx={{ background: 'none', boxShadow: 'none', maxWidth: '500px'}}>

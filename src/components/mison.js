@@ -22,7 +22,7 @@ const CustomBackgroundGrid = () => {
               backdropFilter:'blur(37px)',
               borderRadius:'20px',
               padding:'20px',
-              paddingBottom:'30px'
+              paddingBottom:'50px'
             }}>
           <Typography className='mission-text'>
            <h4>Misyonumuz</h4>
@@ -34,8 +34,8 @@ const CustomBackgroundGrid = () => {
             sx={{
               backdropFilter:'blur(37px)',
               borderRadius:'20px',
-              padding:'20px',
-              paddingBottom:'30px',
+              padding:'33px',
+              paddingBottom:'60px',
               textAlign: 'center'
             }}>
               <Typography className='mission-text'>
@@ -46,10 +46,12 @@ const CustomBackgroundGrid = () => {
 
                                 {/* Misyon ve Vizyon yazılarının alt kısmı */}
 
-        <Grid item lg='2' textAlign={'center'}>
-            <Box className='mission-under-text2'>
-           En güncel teknolojileri kullanarak problerinize çözüm sunuyoruz
-          </Box>
+        <Grid item lg='2' textAlign={'center'} >
+            <Box className='mission-under-box'>
+              <Typography className='mission-under-text2'>
+           En güncel teknolojileri kullanarak problemlerinize çözüm sunuyoruz
+              </Typography> 
+            </Box>
         </Grid>
             <Grid padding={'20px'}  color={'black'} item lg='4'  className='mission-under-text1'>
               <Box className='mission-tech'

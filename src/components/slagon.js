@@ -24,7 +24,7 @@ const slagon = () => {
   justifyContent="center"
   alignItems="center" padding={'20px'} >
                     <Grid item lg='4'>
-                        <Typography className="slagon-text" classes={'id===!name1'}>
+                        <Typography className="slagon-text">
                        <h4>"Yazılım Gücüyle Geleceği Yeniden Tanımlayın."</h4>
                         Yılların birikimiyle edindiğimiz tecrübe ve yüksek kalitemizle, projelerinizi emin ellerde geliştiriyoruz. Uzman ekibimiz, en yeni teknolojileri kullanarak, sektörde daima öncü ve güvenilir bir isim olmamıza katkı sağlıyor. TechSlot olarak, şirketimiz kurulduğundan beri müşterilerimize çözüm odaklı yaklaşımlarımız ve yeni nesil yazılım ve danışmanlık hizmetlerimizle değer katmaktayız.
                         </Typography>
