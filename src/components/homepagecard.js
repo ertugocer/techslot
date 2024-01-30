@@ -1,59 +1,70 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Button, CardMedia, Grid, Typography } from '@mui/material';
 import '../App.css';
 
 export default function homepagecard(props) {
   return (
-    <Grid container>
-      <Grid item lg='0.5'></Grid>
-        <Card sx={{ maxWidth: 530, background: 'none', boxShadow: 'none', marginTop: '50px'}}>
-              <Grid 
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              >
-      <CardMedia 
-        component="img"
-        image={props.image}
-        alt="Sample Image"
-      /></Grid>
-      <CardContent>
-        <Typography fontSize={'30px'} color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' textAlign={'center'}>
-       {props.title} 
+    <Grid container
+      sx={{
+      maxWidth:'1600px',
+      maxWidt:'700px',
+      border: '2px solid black',
+      borderRadius:'80px',
+      margin:'40px',
+      padding:'20px',
+        '@media (max-width: 1000px)': {
+          fontSize:'20px',
+        },
+    }}  >
+      <Grid item lg={'6'}>
+        <Typography fontSize={'90px'} fontFamily={'inherit'} letterSpacing={'0px'} fontWeight={'500'}
+        sx={{
+          '@media (max-width: 1000px)': {
+            fontSize:'38px',
+            textAlign:'center'
+          },
+        }}
+        >
+          Dijital Harmoni: Yazılımın Yeni Akoru
         </Typography>
-        <Typography variant="body2" color={'rgb(226, 221, 169)'} fontFamily='Josefin Sans' align="left" padding={'15px'} fontSize={'24px'}>
-          {props.title2}
-        </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
-          {props.text}
-        </Typography>
-        <Typography variant="body2" color={'rgb(226, 221, 169)'} fontFamily='Josefin Sans' align="left" padding={'15px'} fontSize={'24px'}>
-          {props.title3}
-        </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
-          {props.text1}
-        </Typography>
-        <Typography variant="body2" color={'rgb(226, 221, 169)'} fontFamily='Josefin Sans' align="left" padding={'15px'} fontSize={'24px'}>
-          {props.title4}
-        </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
-          {props.text2}
-        </Typography>
-        <Typography variant="body2" color={'rgb(226, 221, 169)'} fontFamily='Josefin Sans' align="left" padding={'15px'} fontSize={'24px'}>
-          {props.title5}
-        </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
-          {props.text3}
-        </Typography>
-        <Typography variant="body2" color={'rgb(226, 221, 169)'} fontFamily='Josefin Sans' align="left" padding={'15px'} fontSize={'24px'}>
-          {props.title6}
-        </Typography>
-        <Typography variant="body2" color={'rgba(255, 238, 238, 1)'} fontFamily='Josefin Sans' align="left" paddingLeft={'15px'} fontSize={'22px'}>
-          {props.text4}
-        </Typography>
-      </CardContent></Card>
       </Grid>
+      <Grid lg={'6'}>
+        <Grid container>
+          <Grid item lg="12">
+            <Grid item>
+              <CardMedia
+              component="img"
+              image={require('../images/13.png')}
+              alt="home"
+              sx={{
+                '@media (max-width: 1000px)': {
+                  display:'none',
+                },
+              }}
+              />
+            </Grid>
+          </Grid>
+          <Grid item lg="10">
+            <Typography fontSize={'20px'} fontWeight={'bolder'}>
+            ERP CRM yazlımları ile işletmenize, işinizi kolaylaştıracak, 
+            hayattan daha fazla keyif almanızı sağlayacak çözümler sunmak için geliştirdik.
+            </Typography>
+          </Grid>
+          <Grid item lg="12">
+            <Button sx={{
+              background:'black',
+              color:'white',
+              fontSize:'18px',
+              width:'250px',
+              height:'70px',
+              margin:'20px 0px 20px 0px'
+            }}>
+              DAHA FAZLA Bilgi İÇİn
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 
