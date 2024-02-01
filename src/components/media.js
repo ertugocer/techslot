@@ -75,7 +75,7 @@ class media extends Component {
                 <Link href="05077903550">
                     <WhatsAppIcon />
                 </Link>
-                <Link href="https://www.instagram.com/sedengulten?igsh=d3RyMG8yNHN4aHM1">
+                <Link href="">
                     <InstagramIcon />
                 </Link>
                 <Button>
