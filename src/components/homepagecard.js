@@ -10,8 +10,10 @@ export default function homepagecard(props) {
       maxWidt:'700px',
       border: '2px solid black',
       borderRadius:'80px',
-      margin:'40px',
-      padding:'20px',
+      margin:'80px',
+      padding:'40px',
+      marginTop:'90px',
+      marginBottom:'85px',
         '@media (max-width: 1000px)': {
           fontSize:'20px',
         },
@@ -52,7 +54,7 @@ export default function homepagecard(props) {
           </Grid>
           <Grid item lg="12">
             <Button sx={{
-              background:'black',
+              backgroundColor:'black',
               color:'white',
               fontSize:'18px',
               width:'250px',
