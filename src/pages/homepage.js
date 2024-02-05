@@ -11,35 +11,23 @@ import Slagon from '../components/slagon';
 import Page from '../components/varyasyon'
 import İnnovatin from '../components/innovation';
 import Media from '../components/media';
+import Company from '../components/company';
+import Onepage from '../components/onepage';
+import Navbar from '../components/navbar';
 
 const home = () => {
     return (
         <Grid container direction={'row'} className="ana">
-        <Grid item>
-            <CardMedia
-            component="img"
-            image={require('../images/9.jpg')}
-            alt="home"
-            />
-        </Grid>
-        <Grid item>
-            <CardMedia
-            component="img"
-            image={require('../images/12.jpg')}
-            alt="home"
-            sx={{
-                '@media (max-width: 1000px)': {
-                  display: 'none',
-                },
-              }}
-            />
-        </Grid>
+            <Navbar />
+        <Onepage />
         <HomeCard />
         <Mison />
         <Slagon />
         <Page />
         <İnnovatin />
         <Media />
+        <Company />
+        
         </Grid>
 
 

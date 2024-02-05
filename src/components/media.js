@@ -14,40 +14,45 @@ class media extends Component {
             }}>
                 <Grid item lg="5" color={'white'}>
                     <Grid container justifyContent='center' alignItems='center'>
-                        <Grid item letter="3">
+                        <Grid item lg="12" letter="3" padding={'60px'} paddingLeft={'30px'}>
                 <CardMedia
             component="img"
             image={require('../images/21.png')}
             alt="home"
             sx={{
-                height:'300px',
+                height:'230px',
+                width:'420px',
                 '@media (max-width: 500px)': {
                   width:'200px',
                 },
               }}
             />
             </Grid>
-            <Grid>
-            <Typography fontSize={'29px'} sx={{
+            <Grid container sx={{
+                marginLeft:'70px'
+            }}>
+            <Grid item lg="12" >
+            <Typography fontSize={'48px'} sx={{
             letterSpacing:'0px',
             fontWeight:'500',
             wordBreak:'break-word',
-            textAlign:'center',
+            textAlign:'start',
             padding:'15px'
           }}>
                 Bizimle yenilik yapın
             </Typography>
             </Grid>
-            <Typography fontSize={'20px'} sx={{
+            <Typography fontSize={'24px'} sx={{
             letterSpacing:'0px',
             fontWeight:'500',
             wordBreak:'break-word',
-            textAlign:'center',
+            textAlign:'start',
             padding:'15px'
           }}>
                 Kolay ve güvenli çözümlerle iş operasyonlarınızı otomatikleştirin ve basitleştirin
             </Typography>
-            <Button x={{
+            <Grid item lg="12" margin={'20px'} marginBottom={'120px'} >
+                <Button sx={{
                     color:'#E0E111',
                     border:'1.5px solid #E0E111',
                     borderRadius:'0px',
@@ -56,8 +61,10 @@ class media extends Component {
                     fontWeight:'600',
                     padding:'15px 23px 15px 23px'
                 }}>
-              Hemen Başla
-            </Button>
+                    KEŞFET
+                </Button>
+            </Grid>
+            </Grid>
             </Grid>
                 </Grid>
                 <Grid item lg="7">
@@ -71,20 +78,44 @@ class media extends Component {
                 },
               }}
             />
-            <Stack direction="row" spacing={3}>
-                <Link href="05077903550">
-                    <WhatsAppIcon />
+            <Grid container justifyContent={'center'} spacing={3}>
+                <Grid item lg="4" color={'white'}> 
+                    <Typography textAlign={'start'} fontSize={'32px'}>
+                        Get Social
+                    </Typography>
+                </Grid>
+                <Grid item>
+                <Link href="05077903550" sx={{
+                    color:'white'
+                }}>
+                    <WhatsAppIcon 
+                        fontSize="large"
+                        
+                    />
                 </Link>
-                <Link href="">
-                    <InstagramIcon />
+                </Grid>
+                <Grid item>
+                <Link href="" sx={{
+                    color:'white'
+                }}>
+                    <InstagramIcon fontSize="large" />
                 </Link>
-                <Button>
-                    <LinkedInIcon />
-                </Button>
-                <Button>
-                    <MapsHomeWorkIcon />
-                </Button>
-            </Stack>
+                </Grid>
+                <Grid item>
+                <Link sx={{
+                    color:'white'
+                }}>
+                    <LinkedInIcon fontSize="large" />
+                </Link>
+                </Grid>
+                <Grid item>
+                <Link sx={{
+                    color:'white'
+                }}>
+                    <MapsHomeWorkIcon fontSize="large" />
+                </Link>
+                </Grid>
+            </Grid>
                 </Grid>
             </Grid>
         );
