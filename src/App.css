@@ -52,7 +52,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media (max-width: 420px !important{
+@media (max-width: 420px){
   .slogan-center-text {
     margin-top: 20px !important;
   }
