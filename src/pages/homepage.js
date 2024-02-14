@@ -13,12 +13,10 @@ import İnnovatin from '../components/innovation';
 import Media from '../components/media';
 import Company from '../components/company';
 import Onepage from '../components/onepage';
-import Navbar from '../components/navbar';
 
 const home = () => {
     return (
         <Grid container direction={'row'} className="ana">
-            <Navbar />
         <Onepage />
         <HomeCard />
         <Mison />

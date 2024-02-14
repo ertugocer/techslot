@@ -71,7 +71,8 @@ const CustomBackgroundGrid = () => {
             <Typography fontSize={'27px'} fontWeight={'bolder'} sx={{
             textAlign:'left',
             padding:'50px',
-            width:'580px'
+            width:'580px',
+            marginTop:'40px'
           }}>
               Şirket olarak, müşterilerimize çözüm odaklı yaklaşımla hizmet veriyoruz.
             </Typography>

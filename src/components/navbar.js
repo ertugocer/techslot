@@ -1,121 +1,102 @@
-import React from "react";
-import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem } from '@mui/material'
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Logo from '../images/24.png';
-import '../styles/navbar.css';
+import Container from '@mui/material/Container';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
 
-const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+const components = ['Kurumsal', 'Çözümler', 'Blog', 'İletişim'];
+
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <>
-      <Grid sx={{ display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex' } }}
-        container direction={'row'} className="NavbarContainer">
-        <Grid xs="1.5" sx={{ paddingLeft: { sm: '0', md: '2em' } }}>
-          <Link href="/">
-            <img className="NavbarLogo" src={Logo} alt='logo' />
-          </Link>
-        </Grid>
-        <Grid alignItems={'center'} justifyContent={'flex-end'} container xs="10.5">                 {/* 10.8 */}
-          <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">AnaSayfa</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/prices'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Fİyatlar</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/aqua'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Aqua&Havuz</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item paddingRight={0.7}>
-            <Link sx={{ textDecoration: 'none' }} href={'/contact'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">İletİşİm</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item paddingRight={20}>
-            <Link sx={{ textDecoration: 'none' }} href={'/services'}>
-              <Button className="navbarButton" variant="text">
-                <Typography className="navbarButton" variant="navbar">Hİzmetler</Typography>
-              </Button>
-            </Link>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      {/* Mobile Menu */}
-      <Grid sx={{ display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none' } }}
-        container direction={'row'} className="NavbarContainer">
-        <Grid xs="1.5" sx={{ paddingLeft: { xs: '1em', sm: '2em' } }}>
-          <img className="NavbarLogo" src={Logo} alt='logo' />
-        </Grid>
-        <Grid container xs="10.5" alignItems={'center'}>
-          <Grid item xs="12">
+    <AppBar position="static" sx={{ backgroundColor: '#6B50D4' }}>
+      <Container>
+        <Toolbar disableGutters>
+          <a href='/'>
+          <CardMedia
+            component="img"
+            image={require('../images/25.png')}
+            alt="home"
+            sx={{
+              height: '107px',
+              width: '200px',
+            }}
+          />
+          </a>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              id="demo-positioned-button"
-              aria-controls={open ? 'demo-positioned-menu' : undefined}
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
               aria-haspopup="true"
-              aria-expanded={open ? 'true' : undefined}
-              onClick={handleOpen}
-              sx={{ float: 'right' }}>
-              <MenuIcon sx={{ color: '#fff' }} fontSize="large" />
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
             </IconButton>
             <Menu
-              id="demo-positioned-menu"
-              open={open}
-              onClose={handleClose}
+              id="menu-appbar"
+              anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'sub',
-                horizontal: 'left',
+                vertical: 'bottom',
+                horizontal: 'right',
               }}
+              keepMounted
               transformOrigin={{
-                vertical: 'sub',
-                horizontal: 'left',
-              }}>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/'}>
-                  <Typography className="menuItemText">AnaSayfa</Typography>
-                </Link>
-              </MenuItem>
-             
-              <MenuItem>
-                <Link className="menuItemLink" href={'/prices'}>
-                  <Typography className="menuItemText">fİyatlar</Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/aqua'}>
-                  <Typography className="menuItemText">Aqua&Havuz</Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/contact'}>
-                  <Typography className="menuItemText">İletİşİm</Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className="menuItemLink" href={'/services'}>
-                  <Typography className="menuItemText">Hİzmetler</Typography>
-                </Link>
-              </MenuItem>
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {components.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link to={`/${page}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {page}
+                    </Link>
+                  </Typography>
+                </MenuItem>
+              ))}
             </Menu>
-          </Grid>
-        </Grid>
-      </Grid>
-    </>
-  )
+          </Box>
+          <Box className="navbarBox" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {components.map((page) => (
+              <Button
+              key={page}
+              component={Link}
+              to={`/${page.toLowerCase()}`}
+              sx={{ my: 2, color: 'white', display: 'block', textDecoration: 'none', }}
+              className="navbarButton"
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
 }
-export default Navbar;
+
+export default ResponsiveAppBar;

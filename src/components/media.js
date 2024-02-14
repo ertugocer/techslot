@@ -1,4 +1,4 @@
-import { Grid,CardMedia, Typography, Button,Stack,Link } from '@mui/material';
+import { Grid,CardMedia, Typography, Button,Link } from '@mui/material';
 import React, { Component } from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -81,7 +81,7 @@ class media extends Component {
             <Grid container justifyContent={'center'} spacing={3}>
                 <Grid item lg="4" color={'white'}> 
                     <Typography textAlign={'start'} fontSize={'32px'}>
-                        Get Social
+                    Sosyal Media
                     </Typography>
                 </Grid>
                 <Grid item>
@@ -102,14 +102,14 @@ class media extends Component {
                 </Link>
                 </Grid>
                 <Grid item>
-                <Link sx={{
+                <Link href="" sx={{
                     color:'white'
                 }}>
                     <LinkedInIcon fontSize="large" />
                 </Link>
                 </Grid>
                 <Grid item>
-                <Link sx={{
+                <Link href="" sx={{
                     color:'white'
                 }}>
                     <MapsHomeWorkIcon fontSize="large" />
