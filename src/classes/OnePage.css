@@ -4,30 +4,18 @@
     line-height: 90px !important;
 }
 
-@media (max-width:600px) {
-    .OnePageText1 {
-        font-size: 40px !important;
-        line-height: 60px !important;
-        text-align: center !important;
-        padding-top: 0px !important;
-    }
-}
-
-@media (max-width:600px) {
-    .OnePageText2 {
-        text-align: center !important;
-        padding: 30px !important;
-    }
-}
 
 .OnePageText2 {
     font-size: 40px !important;
     padding: 50px 50px 50px 0px;
 }
 
+
+
 .OnePageGrid1 {
     padding: 50px;
 }
+
 
 .OnePageButton {
     color:#E0E111 !important;
@@ -38,6 +26,13 @@
     font-weight: 600 !important;
     padding: 15px 23px 15px 23px !important;
 }
+
+@media (max-width: 600px) {
+  .OnePageButton {
+    margin: 30px 0px 40px 70px !important;
+  }
+}
+
 .OnePageButton:hover {
     animation: pulse 1.5s infinite;
     box-shadow: 0.5px transparent;
@@ -57,6 +52,91 @@
       box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
     }
   }
+
+.OnePageMobile{
+  text-align: center;
+}
+
+@media (max-width:600px) {
+  .OnePageMobile {
+    text-align: center;
+  }
+}
+
+@media (min-width:601px) {
+  .OnePageMobile {
+    display: none;
+  }
+}
+
+ .OnePageMobileTex1 {
+  color:white;
+ }
+
+ 
+
+@media (max-width:800px) {
+    .OnePageText1 {
+       font-size: 34px !important;
+       margin-top: 10px !important;
+       line-height: 45px !important;
+       margin-left: 22px !important;
+       color: black;
+       font-weight: 500 !important;
+    }
+}
+
+.OnePageMobileText2 {
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+ .OnePageText2 {
+  font-size: 34px !important;
+  padding: 40px 0px 40px 20px !important;
+  margin-left: 20px !important;
+  width: 320px !important;
+  color: black;
+ } 
+}
+
+
+@media (min-width:601px) {
+    .OnePageMobileText2 {
+       display: none;
+    }
+}
+
+
+@media (min-width:601px) {
+  .OnePageMobileGrid1 {
+    display: none;
+  }
+}
+
+.OnePageMobileButton {
+  text-align: center;
+}
+
+@media (min-width: 601px) {
+  .OnePageMobileButton {
+   display: none;
+  }
+}
+@media (max-width:600px) {
+  .OnePageMobileButton {
+    color:#E0E111 !important;
+    border: 1.5px solid #E0E111 !important;
+    border-radius: 0px !important;
+    width: 260px !important;
+    font-size: 21px !important;
+    font-weight: 600 !important;
+    padding: 15px 23px 15px 23px !important;
+    margin: 15px 0px 40px 60px !important;
+  }
+}
+
 
 
   

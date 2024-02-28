@@ -5,11 +5,13 @@ class innovation extends Component {
     render() {
         return (
            <Grid container>
+            
                <Grid item lg="6">
                <CardMedia
             component="img"
             image={require('../images/20.png')}
             alt="home"
+            className=''
             height={'718px'}
             sx={{
                 padding:'60px',

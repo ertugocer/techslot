@@ -1,0 +1,98 @@
+
+
+.FirstGrid {
+    background-image: url(../images/15.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+@media (max-width:600px) {
+    .FirstGrid {
+        width: 700px;
+    }
+}
+
+.TextGrid {
+   word-spacing: 1px;
+   letter-spacing: 0px;
+   padding: 20px;
+   padding-top: 10px;
+   text-align: center;
+  
+} 
+
+@media (max-width: 600px) {
+    .TextGrid {
+        width: 850px !important;
+    }
+}
+
+
+.TextOne {
+    font-size: 36px !important;
+}
+
+@media (max-width: 600px) {
+    .TextOne {
+        font-size: 23px !important;
+        font-weight: 600 !important;
+    }
+}
+
+.HeadText {
+    text-align: center;
+    font-size: 50px !important;
+    padding: 40px;
+}
+
+@media (max-width:600px) {
+    .HeadText {
+        font-size: 40px !important;
+    }
+}
+.TextFirst {
+    font-size: 35px !important;
+}
+
+@media (max-width: 600px) {
+    .TextFirst {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .GridTwo {
+        padding-left: 30px !important;
+    }
+}
+
+.TextThree {
+    text-align: left;
+    padding: 50px;
+    max-width: 580px ;
+    margin-top: 40px;
+    font-size: 27px !important;
+    font-weight: bolder !important;
+}
+
+@media (max-width: 600px) {
+    .TextThree {
+        font-size: 16px !important;
+        max-width: 870px !important;
+        padding: 35px;
+    }
+}
+.HeadGrid {
+z-index: 1;
+margin-bottom: -160px !important;
+}
+
+@media (max-width:600px) {
+    .HeadGrid {
+        margin-bottom: 0px !important;
+        position: inherit;
+    }
+}

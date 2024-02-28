@@ -1,22 +1,12 @@
 import React from 'react';
 import { Button, CardMedia, Grid, Typography } from '@mui/material';
-import '../App.css';
+import '../classes/HomePageCard.css';
 
 export default function homepagecard(props) {
   return (
-    <Grid container
+    <Grid container className='OneGrid'
       sx={{
-      maxWidth:'1600px',
-      maxWidt:'700px',
-      border: '2px solid black',
-      borderRadius:'80px',
-      margin:'80px',
-      padding:'40px',
-      marginTop:'90px',
-      marginBottom:'85px',
-        '@media (max-width: 1000px)': {
-          fontSize:'20px',
-        },
+      
     }}  >
       <Grid item lg={'6'}>
         <Typography fontSize={'90px'} fontFamily={'inherit'} letterSpacing={'0px'} fontWeight={'500'}
@@ -53,15 +43,13 @@ export default function homepagecard(props) {
             </Typography>
           </Grid>
           <Grid item lg="12">
-            <Button sx={{
-              backgroundColor:'black',
-              color:'white',
-              fontSize:'18px',
-              width:'250px',
-              height:'70px',
-              margin:'20px 0px 20px 0px'
-            }}>
-              DAHA FAZLA Bilgi İÇİn
+            <Button className='Button'>DAHA FAZLA Bilgi İÇİn
+              <span style={{
+                fontSize:'40px',
+                bottom:'40px'
+              }}>
+              
+              </span>
             </Button>
           </Grid>
         </Grid>

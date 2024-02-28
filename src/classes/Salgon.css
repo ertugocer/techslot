@@ -1,0 +1,77 @@
+.TextGeneral {
+    max-width: 600px;
+    padding-left: 40px;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.HeadGeneral {
+    font-size: 35px !important;
+    letter-spacing: 0px;
+    font-weight: 500;
+    text-align: start;
+}
+.HeadGeneral2 {
+    font-size: 35px !important;
+    letter-spacing: 0px;
+    font-weight: 500;
+    text-align: start;
+    margin-left: 50px !important;
+}
+
+@media (max-width:600px) {
+    .HeadGeneral2 {
+        margin-left: 0px !important;
+    }
+}
+
+
+.ImageClasses {
+ height: 630px ;
+ margin-top: 15px;
+}
+
+@media (max-width:600px) {
+    .ImageClasses {
+        max-width: 500px !important;
+        max-height: 300px !important;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: content; /* Küçük ekranlarda sıralı bir şekilde görünsün */
+}
+
+.image-container {
+    margin-top: 15px; /* Diğer elemanlardan aralık bırakmak için */
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        max-width: 100%; /* Resmin genişliğini doldurması için */
+        margin-top: 0; /* Küçük ekranlarda aralık bırakmamak için */
+        order: -1; /* Resmi sola taşı */
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row; /* Büyük ekranlarda yan yana görünsün */
+    }
+}
+
+.Webinfo {
+    padding: 5px 60px 30px 52px !important;
+    margin-left: 40px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+@media (max-width:600px) {
+    .Webinfo {
+        padding: 0px !important;
+    }
+}

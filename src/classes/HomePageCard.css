@@ -1,0 +1,59 @@
+.OneGrid {
+    max-width: 1600px;
+    border: 2px solid black;
+    border-radius: 80px;
+    margin: 80px;
+    padding:40px;
+    margin-top: 90px;
+    margin-bottom: 85px;
+}
+@media (max-width: 1000px) {
+    .OneGrid {
+        font-size: 20px;
+        margin: 80px 14px 80px 16px;
+    }
+  }
+
+.Button {
+    
+    font-size: 18px !important;
+    width: 250px !important;
+    height: 70px;
+    margin: 40px 0px 20px 20px !important;
+    transition: all 0.5s !important;
+    cursor: pointer !important;
+    background-color: white !important;
+    color: black !important;
+    border: 1.5px solid black !important;
+}
+
+.Button:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+.Button span {
+    cursor: pointer !important;
+    display: inline-block !important;
+    position: relative !important;
+    transition: 0.5s !important;
+    
+  }
+  
+  .Button span:after {
+    content: '\00bb' !important;
+    position: absolute !important;
+    opacity: 0 !important;
+    top: 0 !important;
+    right: -20px !important;
+    transition: 0.1s !important;
+  }
+  
+  .Button:hover span {
+    padding-right: 25px !important;
+  }
+  
+  .Button:hover span:after {
+    opacity: 1 !important;
+    right: 0 1 !important;
+  }
