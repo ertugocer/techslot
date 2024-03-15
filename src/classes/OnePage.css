@@ -53,21 +53,6 @@
     }
   }
 
-.OnePageMobile{
-  text-align: center;
-}
-
-@media (max-width:600px) {
-  .OnePageMobile {
-    text-align: center;
-  }
-}
-
-@media (min-width:601px) {
-  .OnePageMobile {
-    display: none;
-  }
-}
 
  .OnePageMobileTex1 {
   color:white;
@@ -136,7 +121,3 @@
     margin: 15px 0px 40px 60px !important;
   }
 }
-
-
-
-  

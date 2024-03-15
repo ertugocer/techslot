@@ -1,0 +1,35 @@
+.CompanyImage {
+    margin-top: 60px;
+}
+
+@media (max-width:600px) {
+    .CompanyImage{
+        height: auto;
+    }
+}
+
+.CompanyHead {
+    font-size: 33px !important;
+}
+
+@media (max-width: 600px) {
+    .CompanyHead {
+        font-size: 29px;
+        text-align: center;
+        padding: 25px;
+    }
+}
+
+.CompanyText {
+    font-size: 19px;
+    padding: 20px 30px 0px 0px;
+}
+
+@media (max-width: 600px) {
+    .CompanyText {
+        font-size: 20px !important;
+        letter-spacing: 2px;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+}

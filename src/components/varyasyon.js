@@ -31,8 +31,8 @@ class varyasyon extends Component {
           alt="home"
           className='ImageSetting'
         />
-       <Typography className='VaryasyonHead'>İsteğinize Göre Yazılım</Typography>
-       <Typography className='VaryasyonText'>İşletmeniz İçin üretim, iş bölümü, depo & stok yönetimi ve daha fazlasının yönetimi artık tek panelde</Typography>
+       <Typography className='VaryasyonHead'>İşletmeniz İçin Özel Yazılım</Typography>
+       <Typography className='VaryasyonText'>İşletmenizin gereksinimlerini tam olarak karşılamak üzere tasarlanacak olan yazılımlar ile çözüm sunuyoruz</Typography>
            </Grid>
            <Grid item lg="3.3" color="white" margin={'25px'}>
         <CardMedia
@@ -42,7 +42,7 @@ class varyasyon extends Component {
           className='ImageSetting'
         />
        <Typography className='VaryasyonHead'>Web Sitesi Geliştirme</Typography>
-       <Typography className='VaryasyonText'>İşletmeniz İçin üretim, iş bölümü, depo & stok yönetimi ve daha fazlasının yönetimi artık tek panelde</Typography>
+       <Typography className='VaryasyonText'> İşletmenizin potansiyelini yükseltmek ve rekabette öne geçmek için  web sitesi çözümleri artık sizinle.</Typography>
            </Grid>
             <Grid item lg="2" margin={'20px'} marginBottom={'120px'}>
                 <Button className='ButtonSettings'>
