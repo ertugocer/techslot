@@ -12,7 +12,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const components = ['Kurumsal', 'Çözümler', 'Blog', 'İletişim'];
+const components = ['Kurumsal', 'Çözümler', 'İletişim'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

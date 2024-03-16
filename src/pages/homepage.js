@@ -1,8 +1,6 @@
 import React from "react";
 import {
-    CardMedia,
-    Grid,
-    Typography
+    Grid
 } from '@mui/material'
 import '../App.css';
 import HomeCard from '../components/homepagecard';
@@ -25,7 +23,6 @@ const home = () => {
         <İnnovatin />
         <Media />
         <Company />
-        
         </Grid>
 
 

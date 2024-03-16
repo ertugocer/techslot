@@ -26,19 +26,19 @@ class company extends Component {
                     </Typography>
                 </Grid>
                 <Grid lg="12" color={'white'} textAlign={'center'} backgroundColor="#6B50D4" padding={'60px'}>
-                    <Typography>
-                        İletişim Bİlgileri
+                    <Typography paddingBottom={'12px'}>
+                        İletişim Bilgileri
                     </Typography>
-                    <Typography>
+                    <Typography paddingBottom={'10px'}>
                         Balıkhisar Mahallesi Balıkhisar Köyiçi Küme Evleri NO:741 Akyurt/Ankara
                     </Typography>
-                    <Typography>
-                        Telefon Numarası
-                    </Typography>
-                    <Link href="tel:05077903550">
+                    <Link href="tel:05077903550" sx={{
+                        textDecoration:'none',
+                        color:'inherit',
+                    }}>
                          0507 790 3550
                     </Link>
-                    <Typography>Copyright © 2018 - TechSlot.tech Sitede Kullanılan Tüm Yazılar techslot.tech'a aittir.İzinsiz Kullanılamaz.</Typography>
+                    <Typography paddingTop={'10px'}>Copyright © 2018 - TechSlot.tech Sitede Kullanılan Tüm Yazılar techslot.tech'a aittir.İzinsiz Kullanılamaz.</Typography>
                 </Grid>
             </Grid>
         );
