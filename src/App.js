@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Suspense fallback={loading}>
-          <Navbar />
+         
           <Routes> 
           <Route exact path="*" name="Home Page" element={<Home />} />
           <Route exact path="/Pricing" element={<Media />} />

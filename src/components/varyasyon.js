@@ -1,57 +1,59 @@
-import { Button, Divider, Grid, Typography } from '@mui/material';
-import React, { Component } from 'react';
-import CardMedia from '@mui/material/CardMedia'
-import '../classes/Varyasyon.css'
+import React from 'react';
+import { Grid, Typography, Box, Button } from '@mui/material';
 
-class varyasyon extends Component {
-    render() {
-        return (
-          <Grid container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          sx={{
-            backgroundColor:'black'
-          }}
-        >
-           <Grid item lg="3.3" color="white" margin={'25px'}>
-        <CardMedia
-          component="img"
-          image={require('../images/17.png')}
-          alt="home"
-          className='ImageSetting'
-        />
-       <Typography className='VaryasyonHead' >Üretim Takip Yazılımı</Typography>
-       <Typography className='VaryasyonText'>İşletmeniz İçin üretim, iş bölümü, depo & stok yönetimi ve daha fazlasının yönetimi artık tek panelde</Typography>
-           </Grid>
-           <Grid item lg="3.3" color="white" margin={'25px'}>
-        <CardMedia
-          component="img"
-          image={require('../images/18.png')}
-          alt="home"
-          className='ImageSetting'
-        />
-       <Typography className='VaryasyonHead'>İşletmeniz İçin Özel Yazılım</Typography>
-       <Typography className='VaryasyonText'>İşletmenizin gereksinimlerini tam olarak karşılamak üzere tasarlanacak olan yazılımlar ile çözüm sunuyoruz</Typography>
-           </Grid>
-           <Grid item lg="3.3" color="white" margin={'25px'}>
-        <CardMedia
-          component="img"
-          image={require('../images/19.png')}
-          alt="home"
-          className='ImageSetting'
-        />
-       <Typography className='VaryasyonHead'>Web Sitesi Geliştirme</Typography>
-       <Typography className='VaryasyonText'> İşletmenizin potansiyelini yükseltmek ve rekabette öne geçmek için  web sitesi çözümleri artık sizinle.</Typography>
-           </Grid>
-            <Grid item lg="2" margin={'20px'} marginBottom={'120px'}>
-                <Button className='ButtonSettings'>
-                    KEŞFET
-                </Button>
-            </Grid>
-          </Grid>
-        );
-    }
+function CustomContent() {
+  return (
+    <Box sx={{ margin: '30px', textAlign: 'center' }}>
+      <Grid container spacing={4}>
+        {/* Üstteki Metinler */}
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">İsteğinize Özel Yazılım</Typography>
+          <Typography variant="body1">
+            İstekleriniz doğrultusunda size özel tasarlanmış ve kodlanmış yazılımlar. Problemlerinizin çözümü artık bu kadar kolay.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">İsteğinize Özel Yazılım</Typography>
+          <Typography variant="body1">
+            İstekleriniz doğrultusunda size özel tasarlanmış ve kodlanmış yazılımlar. Problemlerinizin çözümü artık bu kadar kolay.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">İsteğinize Özel Yazılım</Typography>
+          <Typography variant="body1">
+            İstekleriniz doğrultusunda size özel tasarlanmış ve kodlanmış yazılımlar. Problemlerinizin çözümü artık bu kadar kolay.
+          </Typography>
+        </Grid>
+
+        {/* Alt Metinler */}
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">Web Sitesi Geliştirme</Typography>
+          <Typography variant="body1">
+            Son teknolojilerle tasarladığımız projelerimiz ve web sitelerimizle her zaman güncel ve hızlı bir deneyim yaşayın. Bizimle bir adım öne geçmek istemez misiniz?
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">Web Sitesi Geliştirme</Typography>
+          <Typography variant="body1">
+            Son teknolojilerle tasarladığımız projelerimiz ve web sitelerimizle her zaman güncel ve hızlı bir deneyim yaşayın. Bizimle bir adım öne geçmek istemez misiniz?
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Typography variant="h6">Üretim Takip Yazılımı</Typography>
+          <Typography variant="body1">
+            İşletmeniz için üretim, iş bölümü, depo & stok yönetimi ve daha fazlasının yönetimi artık tek panelde. Yönetim kolaylığı burada.
+          </Typography>
+        </Grid>
+      </Grid>
+
+      {/* Keşfet Butonu */}
+      <Box sx={{ marginTop: '20px' }}>
+        <Button variant="contained" color="primary">
+          Keşfet
+        </Button>
+      </Box>
+    </Box>
+  );
 }
 
-export default varyasyon;
+export default CustomContent;
