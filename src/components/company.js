@@ -25,12 +25,9 @@ class company extends Component {
                         Yılların birikimiyle edindiğimiz tecrübe ve yüksek kalitemizle, projelerinizi emin ellerde geliştiriyoruz. Uzman ekibimiz, en yeni teknolojileri kullanarak, sektörde daima öncü ve güvenilir bir isim olmamıza katkı sağlıyor. TechSlot olarak, şirketimiz kurulduğundan bu yana müşterilerimize çözüm odaklı yaklaşımlarımız ve yeni nesil yazılım ve danışmanlık hizmetlerimizle değer katmaktayız.
                     </Typography>
                 </Grid>
-                <Grid lg="12" color={'white'} textAlign={'center'} backgroundColor="#6B50D4" padding={'60px'}>
+                <Grid lg="12" color={'white'} textAlign={'center'} backgroundColor="#1976d2" padding={'60px'}>
                     <Typography paddingBottom={'12px'}>
                         İletişim Bilgileri
-                    </Typography>
-                    <Typography paddingBottom={'10px'}>
-                        Balıkhisar Mahallesi Balıkhisar Köyiçi Küme Evleri NO:741 Akyurt/Ankara
                     </Typography>
                     <Link href="tel:05077903550" sx={{
                         textDecoration:'none',

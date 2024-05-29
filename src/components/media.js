@@ -3,14 +3,15 @@ import { Grid, CardMedia, Typography, Button, Link } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
+import XIcon from '@mui/icons-material/X';
 import '../classes/Media.css';
 
 class Media extends Component {
     render() {
         return (
             <Grid container alignItems='center' justifyContent='center' sx={{
-                backgroundColor: 'black'
+                backgroundColor: 'black',
+                paddingTop:"60px"
             }}>
                 <Grid item xs={12} lg={5} color={'white'}>
                     <Grid container justifyContent='center' alignItems='center'>
@@ -47,7 +48,12 @@ class Media extends Component {
                                     width: '260px',
                                     fontSize: '21px',
                                     fontWeight: '600',
-                                    padding: '15px 23px 15px 23px'
+                                    padding: '12px 15px 12px 15px',
+                                    backgroundColor: 'transparent',
+                                    '&:hover': {
+                                      border: '1.5px solid black',
+                                      color: '#E0E111',
+                                    },
                                 }}>
                                     KEŞFET
                                 </Button>
@@ -82,24 +88,24 @@ class Media extends Component {
                             </Link>
                         </Grid>
                         <Grid item  xs="3" lg="1">
-                            <Link href="#" sx={{
+                            <Link href="https://www.instagram.com/techslot.tech?igsh=MTdlY3BvdXZ3OGJvZg%3D%3D&utm_source=qr" sx={{
                                 color: 'white'
                             }}>
                                 <InstagramIcon fontSize="large" />
                             </Link>
                         </Grid>
                         <Grid item xs="3" lg="1">
-                            <Link href="#" sx={{
+                            <Link href="https://www.linkedin.com/company/techslot-tech/" sx={{
                                 color: 'white'
                             }}>
                                 <LinkedInIcon fontSize="large" />
                             </Link>
                         </Grid>
                         <Grid item xs="3" lg="1">
-                            <Link href="#" sx={{
+                            <Link href="https://x.com/TechSlot_tech" sx={{
                                 color: 'white'
                             }}>
-                                <MapsHomeWorkIcon fontSize="large" />
+                                <XIcon fontSize="large" />
                             </Link>
                         </Grid>
                     </Grid>
